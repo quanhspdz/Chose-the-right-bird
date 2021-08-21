@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgChosenBird1"
+            android:layout_height="match_parent"
+            android:src="@drawable/red2"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgChosenBird2"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/red2"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imgChosenBird3"
+            android:scaleType="centerCrop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/red2"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Choose the birds right in right order!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:layout_weight="0.5"/>
+    <GridView
+        android:id="@+id/gvBirds"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"/>
+</LinearLayout>
+
